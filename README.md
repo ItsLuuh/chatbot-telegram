@@ -12,7 +12,7 @@ Hello, I made this code for my telegram bot. You can find it here: https://t.me/
 - Works - You can watch what I did. 
 ### A working chat between you and another person.
 ![image](https://user-images.githubusercontent.com/69093609/175719555-c6feb3d7-fd3f-4e28-ac07-caeddfdae47b.png)
-##### (You can write a message replying to this message)
+##### (You can write to the user replying to this message)
 ![image](https://user-images.githubusercontent.com/69093609/175719444-4f0ec6cf-53dd-4176-b6fd-d2d7dec14154.png)
 ### Some commands:
 - /stopchat - if the chat is long and you can't fine the button to go back.
