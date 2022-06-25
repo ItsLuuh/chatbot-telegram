@@ -64,7 +64,7 @@ public class LuuhBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "token";
+        return "5406443377:AAENXDKqsVkeSIaa-A4DbsJE02b7Ecd3Ag4";
     }
 
     @Override
@@ -77,7 +77,7 @@ public class LuuhBot extends TelegramLongPollingBot {
                 Message message1 = update.getMessage().getReplyToMessage();
                 ReplyKeyboard replyKeyboard = message1.getReplyMarkup();
                 String messagetext = message1.getText();
-                Long messageid = Long.valueOf(messagetext.substring(messagetext.lastIndexOf("» ") + 1));
+                Long messageid = Long.valueOf(messagetext.substring(messagetext.lastIndexOf("» ") + 2));
                 SendMessage message2 = new SendMessage();
                 String resptext = update.getMessage().getText();
 
@@ -217,6 +217,7 @@ public class LuuhBot extends TelegramLongPollingBot {
                 } else if(message.contains("start")){
                     SendMessage messagebot = new SendMessage();
                     String username = update.getMessage().getFrom().getUserName();
+                    System.out.println("@"+username+" ha avviato il bot");
                     messagebot.setText("Hello @" + username + "! Select your language you want to talk with me:");
                     InlineKeyboardMarkup markupInline = new InlineKeyboardMarkup();
                     List<List<InlineKeyboardButton>> rowsInline = new ArrayList<>();
